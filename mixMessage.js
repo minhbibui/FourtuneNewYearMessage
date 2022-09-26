@@ -13,16 +13,12 @@ const message = [
 ];
 
 function getGreeting(message){
-    let lenght = message.lenght;
-    console.log(lenght);
-    let randomPosition = Math.floor(Math.random() * lenght);
+    let length = message.length;
+    let randomPosition = Math.floor(Math.random() * length);
     let greeting = message[randomPosition];
     // after generate a position of a message we return that whole message
-    console.log(randomPosition);
-    console.log(greeting);
     return greeting;
 }
 
-console.log(message);
 console.log("It's new year time let see what fortune message we will have!")
-console.log("Your message for this year is: " + getGreeting(message));
+console.log("Your lucky new year message for this year is: " + getGreeting(message));
